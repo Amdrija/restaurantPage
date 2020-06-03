@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+}
+
+h3, h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url("/dist/assets/pictures/restaurant-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+#content {
+  overflow: scroll;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab {
+  margin: 0 20px;
+  line-height: 30px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.tab h2 {
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab h2:hover {
+  border-bottom: 2px solid #d26723;
+  transition: border-bottom 0.3s;
+}
+
+.tab.active h2 {
+  background-color: #d26723;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.tab.active h2:hover {
+  border-bottom: 2px solid transparent;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  flex: 0 1 250px;
+  background-color: #e2e2e2;
+  border-radius: 3px;
+  margin: 20px 20px;
+  box-shadow: 0 0 40px -10px black;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 50%;
+  border-radius: 3px 3px 0 0;
+  object-fit: cover;
+}
+
+.item-description {
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media (max-width: 620px) {
+  .menu-item {
+    flex-grow: 1;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
