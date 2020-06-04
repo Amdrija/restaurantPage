@@ -45,28 +45,28 @@ function onload() {
     //so that we can toggle the active class on it
     last_clicked_button = mains_button;
 
-    starters_button.addEventListener('click', function (event) {
+    starters_button.addEventListener('click', function () {
         clearMenuContainer();
         showAllStarters(menu_container);
         toggleButtonActive(starters_button, last_clicked_button);
         last_clicked_button = starters_button;
     });
 
-    mains_button.addEventListener('click', function (event) {
+    mains_button.addEventListener('click', function () {
         clearMenuContainer();
         showAllMains(menu_container);
         toggleButtonActive(mains_button, last_clicked_button);
         last_clicked_button = mains_button;
     });
 
-    desserts_button.addEventListener('click', function (event) {
+    desserts_button.addEventListener('click', function () {
         clearMenuContainer();
         showAllDesserts(menu_container);
         toggleButtonActive(desserts_button, last_clicked_button);
         last_clicked_button = desserts_button;
     });
 
-    drinks_button.addEventListener('click', function (event) {
+    drinks_button.addEventListener('click', function () {
         clearMenuContainer();
         showAllDrinks(menu_container);
         toggleButtonActive(drinks_button, last_clicked_button);
